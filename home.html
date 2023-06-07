@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section class="navbar" >
+        <div class="day">
+            Day 1
+        </div>
+        <div class="box">
+            <div class="box-info">
+                <div style="background-image: url(img/food.png);" class="icon"></div>
+                <span id="FoodDislay" >0</span>
+            </div>
+            <progress id="FoodProgress" value="50" max="100" ></progress>
+        </div>
+        <div class="box">
+            <div class="box-info">
+                <div style="background-image: url(img/worker.png);" class="icon"></div>
+                <span id="WorkerDisplay" >0</span>
+            </div>
+            <progress id="WorkerProgress" value="30" max="100" ></progress>
+        </div>
+        <div class="box">
+            <div class="box-info">
+                <div style="background-image: url(img/larva.png);" class="icon"></div>
+                <span id="LarvaDisplay">0</span>
+            </div>
+            <progress id="LarvaProgress" value="80" max="100" ></progress>
+        </div>
+        <div class="next"></div>
+    </section>
+    <script src="js/DataBank.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
