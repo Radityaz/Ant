@@ -1,0 +1,65 @@
+@font-face {
+    font-family: nunito;
+    src: url(font/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: nunito-bold;
+    src: url(font/Nunito-Bold.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    /* outline: 1px solid red; */
+    font-family: nunito;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 40%;
+    height: 28vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title title";
+}
+
+.wrapper > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: nunito-bold;
+    letter-spacing: 5px;
+    font-size: 80px;
+
+}
+
+.wrapper > a {
+    margin: 5%;
+    height: 7vh;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: lightgrey;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.wrapper > a:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    font-family: nunito-bold;
+}
