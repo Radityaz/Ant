@@ -30,5 +30,4 @@ setInterval(() => {
         localStorage.setItem("ant.data" + index, Object.values(Data)[index]);
       }
       console.log(Data)
-      Data.food++
 }, 1000);

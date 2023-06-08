@@ -17,7 +17,7 @@
                 <div style="background-image: url(img/food.png);" class="icon"></div>
                 <span id="FoodDislay" >0</span>
             </div>
-            <progress id="FoodProgress" value="50" max="100" ></progress>
+            <progress id="FoodProgress" value="50" max="600" ></progress>
         </div>
         <div class="box">
             <div class="box-info">
@@ -42,6 +42,19 @@
         <a id="Nav2" onclick="ActiveButton(2)" href="#Page2">Construction</a>
         <a id="Nav3" onclick="ActiveButton(3)" href="#Page3">Living Space</a>
     </section>
+    <section id="questionmenu" onclick="questionmenu(-1)" class="question" >
+        <div class="q-box">
+            <span id="q-title" class="q-title" >
+                Title
+            </span>
+            <span id="q-subtitle" >
+                Description
+            </span>
+            <span class="q-tap" >
+                Click Anywhere To exit  
+            </span>
+        </div>
+    </section>
     <div class="container">
         <div id="Page1" class="page1">
             <div class="wrapper">
@@ -54,18 +67,18 @@
                         Lv. 1   
                     </span>
                 </span>
-                <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                <div style="background-image: url(img/question.png);" onclick="questionmenu(0)" class="button-icon"></div>
                 </button>
                 <button style="grid-area: guard;" >
                     <span>
                         <span class="button-name" >
-                            Guard Ant
+                            Post Guard
                         </span>
                         <span class="button-level" >
                             Lv. 1   
                         </span>
                     </span>
-                    <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                    <div style="background-image: url(img/question.png);" onclick="questionmenu(1)" class="button-icon"></div>
                 </button>
                 <button style="grid-area: discovery;" >
                     <span>
@@ -76,81 +89,92 @@
                             Lv. 1   
                         </span>
                     </span>
-                    <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                    <div style="background-image: url(img/question.png);" onclick="questionmenu(2)" class="button-icon"></div>
                     </button>
             </div>
         </div>
         <div id="Page2" class="page1">
-            <div class="wrapper">
-                <button style="grid-area: gate;" >
+            <div class="wrapper2">
+                <button style="grid-area: storage;" >
+                    <span>
+                        <span class="button-name" >
+                            Storage
+                        </span>
+                        <span class="button-level" >
+                            Lv. 1   
+                        </span>
+                    </span>
+                    <div style="background-image: url(img/question.png);" onclick="questionmenu(3)" class="button-icon"></div>
+                    </button>
+                <button style="grid-area: farm;" >
                 <span>
                     <span class="button-name" >
-                        Nest Gate
+                        Fungi Farm
                     </span>
                     <span class="button-level" >
                         Lv. 1   
                     </span>
                 </span>
-                <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                <div style="background-image: url(img/question.png);" onclick="questionmenu(4)" class="button-icon"></div>
                 </button>
-                <button style="grid-area: guard;" >
+                <button style="grid-area: honey;" >
                     <span>
                         <span class="button-name" >
-                            Guard Ant
+                            HoneyPot Ant
                         </span>
                         <span class="button-level" >
                             Lv. 1   
                         </span>
                     </span>
-                    <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                    <div style="background-image: url(img/question.png);" onclick="questionmenu(5)"  class="button-icon"></div>
                 </button>
-                <button style="grid-area: discovery;" >
+                <button style="grid-area: barrack;" >
                     <span>
                         <span class="button-name" >
-                            Discovery
+                            Barrack
                         </span>
                         <span class="button-level" >
                             Lv. 1   
                         </span>
                     </span>
-                    <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                    <div style="background-image: url(img/question.png);" onclick="questionmenu(6)" class="button-icon"></div>
                     </button>
             </div>
         </div>
         <div id="Page3" class="page1">
-            <div class="wrapper">
-                <button style="grid-area: gate;" >
+            <div class="wrapper3">
+                <button style="grid-area: queen;" >
                 <span>
                     <span class="button-name" >
-                        Nest Gate
+                        Queen Ant
                     </span>
                     <span class="button-level" >
                         Lv. 1   
                     </span>
                 </span>
-                <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                <div style="background-image: url(img/question.png);" onclick="questionmenu(7)" class="button-icon"></div>
                 </button>
-                <button style="grid-area: guard;" >
+                <button style="grid-area: nursery;" >
                     <span>
                         <span class="button-name" >
-                            Guard Ant
+                            Nursery
                         </span>
                         <span class="button-level" >
                             Lv. 1   
                         </span>
                     </span>
-                    <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                    <div style="background-image: url(img/question.png);" onclick="questionmenu(8)" class="button-icon"></div>
                 </button>
-                <button style="grid-area: discovery;" >
+                <button style="grid-area: worker;" >
                     <span>
                         <span class="button-name" >
-                            Discovery
+                            Worker Hut
                         </span>
                         <span class="button-level" >
                             Lv. 1   
                         </span>
                     </span>
-                    <div style="background-image: url(img/question.png);" class="button-icon"></div>
+                    <div style="background-image: url(img/question.png);" onclick="questionmenu(9)" class="button-icon"></div>
                     </button>
             </div>
         </div>
