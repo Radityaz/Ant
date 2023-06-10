@@ -95,3 +95,8 @@ function questionmenu(index) {
 
     console.log(index)
 }
+
+function link(event) {
+    window.event.preventDefault();
+    console.log("Hello")
+}

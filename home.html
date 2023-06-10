@@ -58,18 +58,15 @@
     <div class="container">
         <div id="Page1" class="page1">
             <div class="wrapper">
-                <button style="grid-area: gate;" >
+                <a href="gate.html" id="link" style="grid-area: gate;" >
                 <span>
                     <span class="button-name" >
                         Nest Gate
                     </span>
-                    <span class="button-level" >
-                        Lv. 1   
-                    </span>
                 </span>
-                <div style="background-image: url(img/question.png);" onclick="questionmenu(0)" class="button-icon"></div>
-                </button>
-                <button style="grid-area: guard;" >
+                <div style="background-image: url(img/question.png);" onclick="questionmenu(0), link(event) " class="button-icon"></div>
+                </a>
+                <a style="grid-area: guard;" >
                     <span>
                         <span class="button-name" >
                             Post Guard
@@ -79,8 +76,8 @@
                         </span>
                     </span>
                     <div style="background-image: url(img/question.png);" onclick="questionmenu(1)" class="button-icon"></div>
-                </button>
-                <button style="grid-area: discovery;" >
+                </a>
+                <a style="grid-area: discovery;" >
                     <span>
                         <span class="button-name" >
                             Discovery
@@ -90,7 +87,7 @@
                         </span>
                     </span>
                     <div style="background-image: url(img/question.png);" onclick="questionmenu(2)" class="button-icon"></div>
-                    </button>
+                </a>
             </div>
         </div>
         <div id="Page2" class="page1">

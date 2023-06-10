@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gate.css">
+</head>
+<body>
+    <section class="navbar" >
+        <a class="goback" href="home.html"></a>
+        <div class="box">
+            <div class="box-info">
+                <div style="background-image: url(img/food.png);" class="icon"></div>
+                <span id="ResourceDisplay" >0</span>
+            </div>
+            <progress id="ResourceProgress" value="50" max="600" ></progress>
+        </div>
+        <div class="box">
+            <div class="box-info">
+                <div style="background-image: url(img/worker.png);" class="icon"></div>
+                <span id="WorkerDisplay" >0</span>
+            </div>
+            <progress id="WorkerProgress" value="30" max="100" ></progress>
+        </div>
+        <div>
+        </div>
+    </section>
+    <section class="container" >
+        <div class="title">
+            Entry Gate
+        </div>
+        <div class="subtitle">
+            This is the gate between the ground and nest, Nest gate provide a defend entry so some creature or other can't go to your nest, but beware because some unwanted guest can get in your base, upgrade it to increase it's security rate.
+        </div>
+        <div class="upgrade">
+            <div class="utitle">
+                Entry Gate
+                <span>Lv.1</span>
+            </div>
+            <div class="upgrade1">
+                <span class="upgrade-title" >
+                    Security Gate
+                </span>
+                <span>
+                    Effect
+                </span>
+                <button>
+                    <div class="Uicon"></div>
+                    3000
+                </button>
+            </div>
+            <div class="upgrade1">
+                <span class="upgrade-title" >
+                    Worker Action
+                </span>
+                <span>
+                    Effect
+                </span>
+                <button>
+                    <div class="Uicon"></div>
+                    3000
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="js/DataBank.js"></script>
+    <script src="js/gate.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 var Data = {};
-var DataKey = ["food", "worker", "larva","day"];
+var DataKey = ["food", "worker", "larva","day","resource"];
 
 if ("ant.newplayer" in localStorage) {
   OldPlayer();
@@ -13,6 +13,7 @@ function NewPlayer() {
   Data.worker = 25;
   Data.larva = 5;
   Data.day = 1
+  Data.resource = 250;
 
   for (let index = 0; index < Object.keys(Data).length; index++) {
     localStorage.setItem("ant.data" + index, Object.values(Data)[index]);
